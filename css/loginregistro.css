@@ -1,0 +1,141 @@
+.formcontainer{
+    border-radius: 12px;
+    box-shadow: -15px 15px 0 #6c0b73;
+    background-color: var(--fondo);
+    position: relative;
+}
+
+.formcontainer > form{
+    max-width: 500px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formcontainer > form > .center-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.formcontainer > form > .inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcontainer > form > .inputs > .inputbox{
+    
+    padding: 5px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 7px 0;
+    position: relative;
+}
+
+.formcontainer > form > .inputs > .inputbox > label{
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.formcontainer > form > .inputs > .inputbox > .input-content{
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 2px solid white;
+    background-color: var(--fondo);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.formcontainer > form > .inputs > .inputbox > .input-content > i{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+
+.eyeinvisible{
+    display: none !important;
+}
+
+.formcontainer > form > .inputs > .inputbox > .input-content > input{
+    width: 100% !important;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    border: none;
+    background: none;
+    border-radius: 12px;
+    padding-left: 40px;
+}
+
+.formcontainer > form > .inputs > .inputbox > .input-content > input::placeholder{
+    color: white;
+}
+
+.formcontainer > form > .inputs > .inputbox > .input-content > input:focus{
+    outline: 5px solid var(--bordes);
+}
+
+.mensaje-status{
+    position: absolute;
+    top: 15px;
+    right: -230px;
+    background-color: var(--botonHover);
+    box-shadow: -6px 6px 0 #b90ac6;
+    border-radius: 5px;
+    width: 215px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.3s all ease;
+}
+
+.mensaje-visible{
+    right: 30px;
+}
+
+.verContraseña{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verContraseña > .pss{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    right: 0;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.verContraseña > .pss:hover{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    right: 0;
+    color: var(--botonHover);
+    position: absolute;
+    cursor: pointer;
+}

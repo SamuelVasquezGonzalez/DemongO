@@ -1,0 +1,89 @@
+.banner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.banner > video{
+    width: 100%;
+    z-index: -1;
+}
+
+.info-banner{
+    width: 800px;
+    position: absolute;
+    top: 100px;
+    margin-left: 70px;
+}
+
+.info-banner > h1{
+    font-size: 100px;
+}
+
+.startinfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-start{
+    width: 280px;
+    height: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+
+.wrapper{
+    margin-top: 30px;
+}
+
+.btn-start > i{
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    transition: 0.3s all ease;
+}
+
+.btn-start > h4{
+    position: absolute;
+    left: 25px;
+    top: 12px;
+    transition: 0.3s all ease;
+}
+
+.btn-start:hover > i{
+    position: absolute;
+    right: 15px;
+    top: 18px;
+}
+
+
+.marcas-aliadas{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+}
+
+.marcas-aliadas > .wrapper2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.marcas-aliadas > .images-marcas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 12%, rgba(255,255,255,0) 100%);
+}
+

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root{
+    --botonNormal: #D70CE1;
+    --botonHover: #68086F;
+    --textoCitado: #0F0410;
+    --fondo: #90099A;
+    --bordes: #68086F;
+    --colorLogo: #a414af;
+    --header: #7c0a84c2;
+    --sobmbras: #68086F;
+}
+
+
+.inputText{
+    padding: 4px;
+}
+
+.noscroll-box{
+    width: 100%;
+    height: 100vh;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+    color: white;
+}
+
+.noscroll-box::before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url(../imgs/logoIcon.png) 0 0 repeat;
+    background-size: 180px;
+    transform: rotate(-30deg);
+    background-color: rgb(81, 22, 81);
+}
+
+.moresmall{
+    width: 150px;
+}
+
+.small{
+    width: 300px;
+}
+
+.medium{
+    width: 400px;
+}
+
+.big{
+    width: 600px;
+}
+
+.center-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.textSmall{
+    font-size: 100px;
+    color: var(--colorLogo);
+    text-shadow: 0 0 25px black;
+}
+
+.textMedium{
+    width: 400px;
+}
+
+.textBig{
+    width: 600px;
+}
+
+.center-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    color: white;
+    background: var(--botonNormal);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+button:hover{
+    box-shadow: -5px 5px 0 var(--botonHover);
+}
+
+.normal{
+    width: 140px;
+    height: 40px;
+    color: white;
+    background: var(--botonNormal);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.normal:hover{
+    box-shadow: -5px 5px 0 var(--botonHover);
+}
+
+.btn-active{
+    padding: 7px 14px;
+    border-radius: 12px;
+    width: 140px;
+    height: 40px;
+    color: white;
+    background: var(--botonNormal);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.btn-active:hover{
+    box-shadow: -5px 5px 0 var(--botonHover);
+}
+
+
+a{
+    color: white;
+    transition: 0.3s all ease;
+}
+
+a:hover{
+    color: rgb(165, 165, 165);
+}
+

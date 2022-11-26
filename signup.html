@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/loginregistro.css">
+    <link rel="stylesheet" href="css/namelogo/style.css">
+    <title>Sign Up - DemongO</title>
+</head>
+<body>
+    <div class="noscroll-box">
+        <div class="center-things">
+            <span class="logo-iconlogo textSmall"></span>
+            <div class="center-box">
+                <p>DEPORTES EXTREMOS.</p>
+            </div>
+        </div>
+        <div class="formcontainer">
+            <form action="/logear" method="post" class="registro-form">
+
+                <div class="center-box">
+                    <h3>Sign Up</h3>
+                </div>
+                <div class="center-box">
+                    <p>Crea Una cuenta para poder interactuar con la comunidad, comentar, likear, subir videos, etc</p>
+                </div>
+                <div class="inputs">
+
+                    <div class="inputbox">
+                        <label for="nombre">Nombre:</label>
+                        <div class="input-content">
+                            <i class="fa-regular fa-at"></i>
+                            <input class="inputText nombre" type="text" name="nombre" id="nombre" placeholder="Pepito..." required max="100">
+                        </div>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="email">Email:</label>
+                        <div class="input-content">
+                            <i class="fa-regular fa-at"></i>
+                            <input class="inputText correo" type="email" name="email" id="email" placeholder="Email" required max="100">
+                        </div>
+                    </div>
+                    
+                    <div class="inputbox">
+                        <label for="password">Password:</label>
+                        <div class="input-content">
+                            <i class="fa-solid fa-unlock"></i>
+                            
+                            <div class="verContraseña">
+                                <i class="uno fa-solid fa-eye pss" title="Ver Contraseña"></i>
+                                <i class="dos fa-solid fa-eye-slash pss eyeinvisible" title="Ocultar Contraseña"></i>
+                            </div>
+                            <input class="inputText contraseña contraseña-login" type="password" name="password" id="password" required>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="imgPerfil" value="https://res.cloudinary.com/lm-network/image/upload/v1660270331/defaultProfile_qzecxj.png">
+
+                    <div class="center-box">
+                        <button type="submit" class="btn-form2">Crear Cuenta</button>
+                    </div>
+
+                    <div class="center-box">
+                        <a href="login.html">Leer Terminos y Condiciones</a>
+                    </div>
+
+                    <div class="center-box">
+                        <a href="">¿Ya tienes una cuenta? Inicia sesión</a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="mensaje-status">
+            <p class="error"></p>
+        </div>
+        
+    </div>
+
+    <script src="js/showPassword.js"></script>
+    <script src="js/validarRegistro.js"></script>
+    <script src="https://kit.fontawesome.com/f641727a49.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+header{
+    width: 100%;
+    display: flex;
+    padding: 5px 25px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+header > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > ul > li{
+    list-style: none;
+    margin-right: 30px;
+    
+}
+
+header > ul > li > a{
+    text-decoration: none;
+}
+
+header > ul > li > .active{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 7px;
+    border-radius: 12px;
+}
