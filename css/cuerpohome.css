@@ -87,3 +87,17 @@
 background: linear-gradient(0deg, rgba(0,0,0,1) 12%, rgba(255,255,255,0) 100%);
 }
 
+
+.animation{
+    animation: .3s infinite alternate parpadeo;
+}
+
+
+@keyframes parpadeo {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
